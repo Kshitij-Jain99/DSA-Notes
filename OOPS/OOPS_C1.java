@@ -1,4 +1,6 @@
-public class OOPS_C {
+//Instance Getters/Setters: Always use
+
+public class OOPS_C1 {
         public static void main(String args[]) {
         Pen p1 = new Pen();  //creating a pen object called p1
         p1.setColor("Blue");
@@ -12,14 +14,19 @@ public class OOPS_C {
 }
 
 class Pen {//setters were already made before, so make getters now
+    //Instance variables should be private to restrict direct access from outside the class.
     private String color;
     private int tip; //1. pen ki property wala variable tip hai
 
     String getColor(){
         return this.color;
     }
+//Naming convetion: Getters should start with get, Setters should start with set
+//  Getters: public returnType getPropertyName(), Setters: public void setPropertyName(datatype value)
+//For boolean fields, use isPropertyName() instead of getPropertyName().
 
-    int getTip() {
+//Static methods cannot access instance variables directly as they belong to the class, not to any instance. The method setTip should not be static.
+int getTip() {
         return this.tip;
     }
     
