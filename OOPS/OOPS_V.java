@@ -28,3 +28,7 @@ class King implements ChessPlayer{
         System.out.println("up,down,left,right,diagonal(all by 1 step only)");
     }
 }
+/*
+ 1. Interfaces cannot be instantiated directly:
+    Attempting to instantiate an interface directly will result in a compilation error because interfaces cannot be instantiated. They can only be implemented by classes or extended by other interfaces.
+ */
