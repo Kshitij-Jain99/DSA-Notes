@@ -1,4 +1,14 @@
-public class Recursion_L {
+public class Recursion_KL {
+    public static int power(int x, int n) {
+        if(n==0){   //base case
+            return 1;
+        }
+        // int xnm1 power(x, n-1);
+        // int xn = x*xnm1;
+        // return xn;
+        return x*power(x,n-1); //simplified code in 1 line
+    }
+
     public static int optimizedPower(int a, int n){
         if(n==0) {
             return 1;
@@ -14,9 +24,10 @@ public class Recursion_L {
         }
         return halfPowerSq;
     } 
-     public static void main(String[] args) {
-     int a=2;
-     int n=5;
-     System.out.println(optimizedPower(a, n));
-     }
+
+public static void main(String args[]){
+    System.out.println(power(2,5));
+    System.out.println(optimizedPower(2, 5));
+
+    }
 }
