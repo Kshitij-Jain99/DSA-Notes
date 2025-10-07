@@ -1,3 +1,4 @@
+//Check if LL is a Palindrome
 public class M {
     public static class Node {
         int data;
@@ -70,7 +71,7 @@ public class M {
       //step-1 - find mid
     Node midNode = findMid(head);
     
-      //step-2- reverse 2nd half:similar code as {K} but theinitialization is different
+      //step-2- reverse 2nd half:similar code as {K-Reverse a LL} but the initialization is different
         Node prev = null;
         Node curr = midNode; //modification from {K}
         Node next;

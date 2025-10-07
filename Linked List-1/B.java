@@ -1,6 +1,7 @@
+//Head and Tail in LL
 import java.util.LinkedList;
 
-public class B1 {
+public class B {
     public static class Node {
         int data;
         Node next;
@@ -14,10 +15,9 @@ public class B1 {
     public static Node tail;
 
     public static void main(String args[]) {
-        LinkedList ll = new LinkedList();  //ll is oject
+        LinkedList ll = new LinkedList();  //ll is object
         // ll.head = new Node(1);
         // ll.head.next = new Node(2);
         //For writing these for both head and tail we create methods
     }
-
 }

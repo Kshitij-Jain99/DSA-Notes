@@ -1,3 +1,5 @@
+//Remove in LL
+
 public class H {
     public static class Node {
         int data;

@@ -1,3 +1,5 @@
+//Size of LL
+
 public class G {
     public static class Node {
         int data;

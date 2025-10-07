@@ -1,3 +1,5 @@
+//Add in the middle of LL:
+
 public class F {
     public static class Node {
         int data;
@@ -34,11 +36,16 @@ public class F {
     }
 
     public void addM(int idx, int data) {
+        if(idx == 0){    //Adding ele. on head
+            addFirst(data);
+            return;
+        }
+
         Node newNode = new Node(data);
         Node temp = head;
-        int i = 0;
+        int i = 0;  //track temp
 
-        while (i < idx - 1 && temp != null) {
+        while (i < idx - 1 && temp != null) {  //idx-1 -> temp points to prev node
             temp = temp.next;
             i++;
         }
@@ -49,6 +56,7 @@ public class F {
         }
 
         // Insert new node at position idx
+        //i = idx-1; temp -> prev
         newNode.next = temp.next;
         temp.next = newNode;
     }

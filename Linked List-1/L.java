@@ -1,3 +1,4 @@
+//Find and Remove Nth Node from End
 public class L {
     public static class Node {
         int data;
@@ -64,7 +65,7 @@ public class L {
       
    }
 
-   //sz-n for rem. all cases ; node to be deleted sein phele ale index tak
+   //sz-n for rem. all cases ; node to be deleted sein phele  index tak
    int i=1;
    int iToFind = sz-n;
    Node prev = head;

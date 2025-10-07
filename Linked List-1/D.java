@@ -1,6 +1,8 @@
+//Add last in LL:
+
 import java.util.LinkedList;
 
-public class D1 {
+public class D {
     public static class Node {
         int data;
         Node next;
@@ -25,8 +27,6 @@ public class D1 {
 
     public static void main(String args[]) {
         LinkedList ll = new LinkedList();  //ll is oject
-        ll.addFirst(2);
-        ll.addFirst(1);
         ll.addLast(3);
         ll.addLast(4);
         

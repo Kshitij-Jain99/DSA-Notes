@@ -1,6 +1,7 @@
+//Add first in LL
 import java.util.LinkedList;
 
-public class C1 {
+public class C {
     public static class Node {
         int data;
         Node next;

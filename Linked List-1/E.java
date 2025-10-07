@@ -1,4 +1,6 @@
-public class E1 {
+//Print a LL
+
+public class E {
     public static class Node {
         int data;
         Node next;
@@ -46,7 +48,7 @@ public class E1 {
     }
 
     public static void main(String args[]) {
-        E1 ll = new E1();  // Create instance of custom LinkedList
+        E ll = new E();  // Create instance of custom LinkedList
         ll.print();
         ll.addFirst(2);
         ll.print();
