@@ -1,3 +1,6 @@
+// Merge Sort on Linked List
+// Time Complexity: O(n log n)
+
 public class E { 
     public static class Node {
         int data;
@@ -20,6 +23,7 @@ public class E {
             this.size = 0;
         }
 
+
         public void print() {
             if (head == null) {
                 System.out.println("LL is empty");
@@ -33,6 +37,7 @@ public class E {
             System.out.println();
         }
 
+
         private Node getMid(Node head) {
             Node slow = head;
             Node fast = head.next;
@@ -44,17 +49,18 @@ public class E {
             return slow;   //mid node
         }
        
+
         private Node merge(Node head1, Node head2) {
             Node mergedLL = new Node(-1);
             Node temp = mergedLL;
 
             while(head1 != null && head2!= null) {
-                if(head1.data <= head2.data) {  //use which value is greater
-                    temp.next = head1; //choti value ko head
+                if(head1.data <= head2.data) {  
+                    temp.next = head1; 
                     head1 = head1.next; //update
                     temp = temp.next;
                 } else{
-                     temp.next = head2;  //choti value ko head
+                     temp.next = head2; 
                      head2 = head2.next; //update
                      temp = temp.next;
                 }
@@ -73,6 +79,7 @@ public class E {
             return mergedLL.next;
         }
 
+        
         public Node mergeSort(Node head) {                          
             if(head == null || head.next == null) {
                 return head;
@@ -80,9 +87,10 @@ public class E {
 
             //find mid
             Node mid = getMid(head);
+
             // left & right MS
             Node rightHead = mid.next;
-            mid.next = null; // Split the list into two parts
+            mid.next = null;                     // Split the list into two parts
             Node newLeft = mergeSort(head);
             Node newRight = mergeSort(rightHead);
 
