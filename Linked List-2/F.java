@@ -1,3 +1,5 @@
+// Zig-Zag Linked List
+
 public class F { 
     public static class Node {
         int data;
@@ -35,9 +37,9 @@ public class F {
 
        
         public void zigZag() {
-            //fin mid
+            //find mid
             Node slow = head;
-            Node fast = head.next;
+            Node fast = head.next;  //gives left middle; for right middle -> Node fast = head;
             while(fast != null && fast.next != null) {
                 slow = slow.next;
                 fast = fast.next.next;
@@ -57,11 +59,10 @@ public class F {
                 curr = next;
             }
 
+            //alt. merge-- zigZag merge
             Node left = head;
             Node right = prev;
             Node nextL, nextR;
-
-            //alt. merge-- zigZag merge
              while(left != null && right != null) {
                 nextL = left.next;
                 left.next = right;
