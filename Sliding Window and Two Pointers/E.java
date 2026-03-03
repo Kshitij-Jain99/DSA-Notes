@@ -1,4 +1,4 @@
-//904. Fruit Into Baskets: https://leetcode.com/problems/fruit-into-baskets/
+//LC. 904. Fruit Into Baskets: https://leetcode.com/problems/fruit-into-baskets/
 import java.util.*;
 
 public class E {
