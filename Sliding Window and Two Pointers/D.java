@@ -1,5 +1,4 @@
-//1004. Max Consecutive Ones III: https://leetcode.com/problems/max-consecutive-ones-iii/description/
-//HW:1,2 Part
+//LC. 1004. Max Consecutive Ones III: https://leetcode.com/problems/max-consecutive-ones-iii/description/
 
 import java.util.List;
 
