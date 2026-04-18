@@ -1,42 +1,38 @@
+// Reverse a Stack:
+
 import java.util.*;
 
-public class G { 
-   public static void pushAtBottom(Stack<Integer> s, int data) {
-    if(s.isEmpty()) {
-        s.push(data);
-        return;
-      }
-      int top = s.pop();
-      pushAtBottom(s,data);
-      s.push(top);
-   }
-    
-   public static void reverseStack(Stack<Integer> s) {
-    if(s.isEmpty()) {
-        return;
-    }
+public class G {
+    // Approach-1: Iterative(Using Extra Stack)
+    // TC = O(n), SC = O(n) {Explicit Stack}
+    public static void reverseStack1(Stack<Integer> s){
+        Stack<Integer> temp = new Stack<>();
 
-    int top = s.pop();
-    reverseStack(s);
-    pushAtBottom(s,top);
-   }
-    
-   public static void  printStack(Stack<Integer> s) {
-    while(!s.isEmpty()) {
-        System.out.println(s.pop());
-      }
-   }
-    public static void main (String args[]) {
-        //Stack s = new Stack();
-    Stack<Integer> s = new Stack<>();  
-        s.push(1);
-        s.push(2);
-        s.push(3);
-//3,2,1
-       
-        reverseStack(s);
-        printStack(s);
-        //1,2,3 
+        while(!s.isEmpty()){
+            temp.push(s.pop());
         }
     }
 
+
+    // Approach-2: Recursive
+    // TC = O(n^2), SC = O(n) {Implicit Stack}
+    public static void pushAtBottom2(Stack<Integer> s, int data) {
+        if(s.isEmpty()) {
+            s.push(data);
+            return;
+        }
+        int top = s.pop();
+        pushAtBottom2(s, data);
+        s.push(top);
+    }
+        
+    public static void reverseStack2(Stack<Integer> s) {
+        if(s.isEmpty()) {
+            return;
+        }
+        int top = s.pop();
+        reverseStack2(s);
+        pushAtBottom2(s, top);
+    }    
+
+}

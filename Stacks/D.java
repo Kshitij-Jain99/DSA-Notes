@@ -1,11 +1,9 @@
+// Stack using JCF
+
 import java.util.*;
 
 public class D {
-   
-    
-    
     public static void main (String args[]) {
-        //Stack s = new Stack();
     Stack<Integer> s = new Stack<>();
         s.push(1);
         s.push(2);
