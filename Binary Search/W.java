@@ -1,4 +1,4 @@
-//Find the row with maximum number of 1's
+//Find the row with maximum number of 1's (B.S. on 2D Arrays)
 import java.util.*;
 
 public class W {

@@ -1,4 +1,4 @@
-//Median of Row Wise Sorted Matrix
+//Median of Row Wise Sorted Matrix (B.S. on 2D Arrays)
 import java.util.*;
 
 public class Y {

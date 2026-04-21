@@ -1,4 +1,4 @@
-//Search Element in a Rotated Sorted Array-II
+//Search Element in a Rotated Sorted Array-II (B.S. on 1D Arrays)
 import java.util.ArrayList;
 
 public class E {

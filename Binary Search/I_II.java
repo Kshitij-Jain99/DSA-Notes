@@ -1,4 +1,4 @@
-// Find peak Element-II
+// Find peak Element-II (B.S. on 2D Arrays)
 
 public class I_II {
     

@@ -1,4 +1,4 @@
-//Search in a 2D Matrix-II:
+//Search in a 2D Matrix-II (B.S. on 2D Arrays)
 
 import java.util.ArrayList;
 

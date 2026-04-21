@@ -1,4 +1,4 @@
-//A: Split Array Largest Sum Problem:
+//A: Split Array Largest Sum Problem: (B.S. on Answer Space)
 //B: Painter's Partition
 
 import java.util.ArrayList;
@@ -7,7 +7,7 @@ import java.util.Collections;
 public class S {
 
     //Approach-1: Brute Force
-    //TC = O(N * (sum(arr[]) - max(a[]) + 1)), SC = O(1)
+    //TC = O(N * (sum(arr[]) - max(a[]) + 1)), SC = O(1)s
     //A
     public static int countPartitions1(int[] a, int maxSum) {
         int n = a.length;

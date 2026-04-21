@@ -1,4 +1,4 @@
-//Search Element in a Rotated Sorted Array
+//Search Element in a Rotated Sorted Array (B.S. on 1D Arrays)
 import java.util.ArrayList;
 /*
   Rotation in array::
@@ -40,7 +40,7 @@ public static int search2(ArrayList<Integer> arr, int n, int k){
             if(arr.get(low) <= k && k < arr.get(mid)) high = mid-1; //target in left half
             else low = mid + 1; //target in right half
         } else{       //right part is sorted
-            if(arr.get(mid) <= k && k <= arr.get(mid)) low = mid+1;  //target in right half
+            if(arr.get(mid) <= k && k <= arr.get(high)) low = mid+1;  //target in right half
             else high = mid - 1; //target in left half
         }    
     }

@@ -1,4 +1,4 @@
-//First and Last Occurance in Array
+//First and Last Occurance in Array (B.S. on 1D Arrays)
 
 public class C {
     //Appraoch-1: Brute Force

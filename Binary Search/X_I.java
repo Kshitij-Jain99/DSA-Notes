@@ -1,4 +1,4 @@
-//Search in a 2D Matrix-I:
+//Search in a 2D Matrix-I (B.S. on 2D Arrays)
 import java.util.*;
 
 public class X_I {
