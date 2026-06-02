@@ -1,5 +1,4 @@
 import java.util.PriorityQueue;
-import java.util.Comparator;
 
 public class C1 {
     static class Student implements Comparable<Student> {  //overriding

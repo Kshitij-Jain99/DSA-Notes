@@ -1,9 +1,7 @@
 // Stack implemented using ArrayList:
-
 import java.util.ArrayList;
 
 public class B {
-
     final private static ArrayList<Integer> al = new ArrayList<>();
     
     public static boolean isEmpty(){ 
@@ -11,7 +9,7 @@ public class B {
     }    
     
     // push
-    public static void push(int data) {  //this fxn add data on top of stack or last element of ArrayList
+    public static void push(int data) { 
         al.add(data);   
     }
 
@@ -21,7 +19,7 @@ public class B {
             return -1;
         }
         int top = al.get(al.size()-1);    
-        al.remove(al.size()-1);        // top remove
+        al.remove(al.size()-1);        
         return top;
     }
     

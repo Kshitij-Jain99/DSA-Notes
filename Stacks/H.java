@@ -1,5 +1,4 @@
 // Stock Span Problem: (Previous Greater Element)
-
 import java.util.*;
 
 public class H {

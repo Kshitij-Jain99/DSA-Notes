@@ -1,17 +1,17 @@
 // Reverse a Stack:
-
 import java.util.*;
 
 public class G {
     // Approach-1: Iterative(Using Extra Stack)
     // TC = O(n), SC = O(n) {Explicit Stack}
-    public static void reverseStack1(Stack<Integer> s){
+    public static Stack<Integer> reverseStack1(Stack<Integer> s){
         Stack<Integer> temp = new Stack<>();
 
         while(!s.isEmpty()){
             temp.push(s.pop());
         }
-    }
+        return temp;
+      }
 
 
     // Approach-2: Recursive
@@ -35,4 +35,10 @@ public class G {
         pushAtBottom2(s, top);
     }    
 
+
+    // Appraoch-3: In-Built function:
+    // TC = O(N), SC = O(1)
+    public static void reverseStack3(Stack<Integer> s) {
+        Collections.reverse(s);
+    }
 }
